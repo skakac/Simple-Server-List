@@ -1,0 +1,43 @@
+*{
+
+  font-size:11px;
+  font-family:verdana,tahoma,arial,sans-serif;
+  word-wrap:break-word;
+}
+.greska{ color:white; font-weight: bold;}
+
+tr{
+	background-color:#252525;
+	table-layout:fixed
+}
+td {padding:1px 2px;}
+
+
+.ime, .mapa{text-align:left;}
+.naziv{color:#F00000; overflow:hidden; height:1.3em;text-decoration:none;padding:0 2px;}
+.obicna, .zemlja, .igraci{ white-space:nowrap; text-align:center;}
+.mapa, .igraci{color:white;}
+.zemlja {padding:2px 5px;}
+.ip{text-align:left}
+
+.ip a:link
+{
+  text-decoration:none;
+  color:#FFFF00;
+}
+
+a:visited
+{
+  text-decoration:none;
+  color:#FFFF00;
+}
+
+a:hover
+{
+  color:#F00000;
+}
+
+a:active
+{
+  color:#FFFF8C;
+}
