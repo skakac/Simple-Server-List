@@ -9,7 +9,7 @@ $baza   = $func->otvaranje_baze("1");
 if($_POST['login']){
 
 
-	if($_POST['user'] == ADMIN && $_POST['pass'] == SIFRA){
+	if($_POST['user'] == 'admin' && $_POST['pass'] == SIFRA){
 	 	$_SESSION['login'] = "1";
 	 	header("Location: ./index.php");
 	 }
