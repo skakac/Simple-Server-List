@@ -12,9 +12,12 @@ if($_POST['login']){
 	if($_POST['user'] == 'admin' && $_POST['pass'] == SIFRA){
 	 	$_SESSION['login'] = "1";
 	 	header("Location: ./index.php");
+	 	die();
 	 }
-	else
+	else{
 		header("Location: ./login.php");
+		die();
+	}
 }
 else if(isset($_POST['dodaj'])){
 	$ip 	= $_POST['ip'];
@@ -27,6 +30,7 @@ else if(isset($_POST['dodaj'])){
 	if(!preg_match('/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\:[0-9]{1,5}/', $ip)) { 
 		$_SESSION['poruka'] = "IP nije validan"; 
 		header("Location: ./index.php");
+		die();
 
 	}
 	else if(!empty($ip) && !empty($naziv)){
@@ -38,10 +42,12 @@ else if(isset($_POST['dodaj'])){
 		if (!$dodavanje) die("Neuspesno dodavanje.");
 
 		header("Location: ./index.php");
+		die();
 	}
 	else{
 		$_SESSION['poruka'] = "Popuni sva polja";
 		header("Location: ./index.php");
+		die();
 
 	}
 
@@ -62,6 +68,7 @@ else if(isset($_POST['izmeni'])){
 	if(!preg_match('/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\:[0-9]{1,5}/', $ip)) { 
 		$_SESSION['poruka'] = "IP nije validan"; 
 		header("Location: ./index.php");
+		die();
 
 	}
 	else if(!empty($ip) && !empty($naziv)){
@@ -72,10 +79,12 @@ else if(isset($_POST['izmeni'])){
 		if (!$izmena) die("Neuspesno menjanje.");
 
 		header("Location: ./index.php");
+		die();
 	}
 	else{
 		$_SESSION['poruka'] = "Popuni sva polja";
 		header("Location: ./index.php");
+		die();
 
 	}
 
@@ -91,6 +100,7 @@ else if(isset($_GET['izbrisi'])){
 
 	$_SESSION['poruka'] = "Uspesno izbrisan server";
 	header("Location: ./index.php");
+	die();
 
 
 }
@@ -99,10 +109,13 @@ else if($_GET['logout']){
 
 	unset($_SESSION['login']);
 	header("Location: ./login.php");
+	die();
 
 
 }
-else
+else{
 	header("Location: ./index.php");
+	die();
+}
 
 ?>
