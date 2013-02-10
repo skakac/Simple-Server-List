@@ -82,7 +82,7 @@ $serveri = $func->lista_servera();
 	      ?>
 	    </table>
 	   	<div style="opacity: 0.4; float:right; margin:auto;" onmouseover="this.style.opacity=0.8;this.filters.alpha.opacity=80" onmouseout="this.style.opacity=0.4;this.filters.alpha.opacity=40">
-	   		<a href="http://skakac.com/ssl.php"><img src="http://skakac.com/other/ssl.png" height=30px border=0 /></a>
+	   		<a href="http://skakac.com/ssl.php" target="_blank"><img src="http://skakac.com/other/ssl.png" height=30px border=0 /></a>
 	   	</div>
 	</div>
 	</body>
