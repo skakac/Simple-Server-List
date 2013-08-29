@@ -74,7 +74,7 @@ $serveri = $func->lista_servera();
 			        echo '</td>';
 
 			        echo '<td class="zemlja"> ';
-			        	 echo '<img src="http://cdn.gametracker.rs/flags/'.$info["iso2"].'.png" style="vertical-align:middle; border:none" title="Zemlja '.$info["countryname"].'" />';
+			        	 echo '<img src="http://static.gametracker.rs/flags/'.$info["iso2"].'.png" style="vertical-align:middle; border:none" title="Zemlja '.$info["countryname"].'" />';
 			        echo '</td>';
 			    echo '</tr>';
 			  	}
